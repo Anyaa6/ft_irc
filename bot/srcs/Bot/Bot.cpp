@@ -72,7 +72,7 @@ bool	Bot::_insult_is_found(std::string msg)
 		infile.close();
 		return false;
 	}
-	while (std::getline(infile, insult))
+	while (std::getline(infile, insult)) cx
 	{
 		size_t pos = msg.find(insult);
 		if (pos != std::string::npos)
